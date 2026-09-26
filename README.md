@@ -8,7 +8,7 @@
 	- [1.1 Raw data analyses](#11-Rawdataanalyses)
 	- [1.2 Multivariate analyses](#12-Multivariateanalyses)
 - [2 Phylogenetic comparative analyses](#2-Phylogenetic-comparative-analyses)
-    - [2.1 Phylogenetic generalized linear regression](#21-Phylogeneticgeneralizedlinearregression)
+    - [2.1 Phylogenetic generalised linear regression](#21-Phylogeneticgeneralisedlinearregression)
 	- [2.2 Analyses of discrete trait evolution with corHMM](#22-Analyses-of-discrete-trait-evolution-with-corHMM)
 - [Reference](#Reference)
 
@@ -28,7 +28,7 @@
 
 `used directory (Preliminary analyses)`
 
-<p align="justify">  In this first session, we will be mainly focusing on multivariate analyses of morphological data.</p>
+<p align="justify">  In this first session, we will be mainly focusing on formalising and performing preliminary analyses of morphological data.</p>
 
 ### 1.1 Raw data analyses
 
