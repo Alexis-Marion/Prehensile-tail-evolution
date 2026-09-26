@@ -39,9 +39,9 @@
 
 ### 1.2 Multivariate analyses
 
-`used script (PyRate_run.sh)`
+`used script (Multivariate analyses & simple phylogenetic regression.ipynb)`
 
-<p align="justify"> The script provided in this section is rather simple, and runs a BDCS (birth-death with constrained shifts) analysis on 20,000,000 generations on the genus dataset, including singletons, with diversification shifts every 5 Myrs and integrating preservation shifts from the 1.1 section. Here, to be computationally efficient, we choose to parallelise our run on 20 CPUs </p> 
+<p align="justify"> </p> 
 
 ## 2 Phylogenetic comparative analyses
 
@@ -75,7 +75,3 @@ Marion, A. F., Condamine, F. L., & Guinot, G. (2024). Sequential trait evolution
 Revell, L. J. (2024). phytools 2.0: an updated R ecosystem for phylogenetic comparative methods (and other things). PeerJ, 12, e16505.
 
 R Core Team (2022). R: A language and environment for statistical computing. R Foundation for statistical computing, Vienna, Austria. URL https://www.R-project.org/.
-
-Silvestro, D., Salamin, N., & Schnitzler, J. (2014). PyRate: a new program to estimate speciation and extinction rates from incomplete fossil data. Methods in Ecology and Evolution, 5(10), 1126-1131.
-
-Silvestro, D., Salamin, N., Antonelli, A., & Meyer, X. (2019). Improved estimation of macroevolutionary rates from fossil data using a Bayesian framework. Paleobiology, 45(4), 546-570.
