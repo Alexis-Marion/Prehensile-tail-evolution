@@ -31,7 +31,7 @@
 
 <p align="justify">  In this first session, we will be mainly focusing on multivariate analyses of morphological data.</p>
 
-### 1.1 Raw data analysis
+### 1.1 Raw data analyses
 
 `used script (model_preservation_test.sh, model_drafting.r; run_preservation.sh)`
 
