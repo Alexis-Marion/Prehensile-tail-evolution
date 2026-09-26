@@ -18,9 +18,9 @@
 
 <p align="justify"> This repository contains html files for performing the following analyses:
 
-**1**: Multivariate analyses
+**1**: Multivariate analyses, such as PCA and LDA
 
-**2**: Phylogenetic comparative analyses
+**2**: Phylogenetic comparative analyses, such as PGLS, PANCOVA and ancestral state estimation
 
 <p align="justify"> All data used to perform each analysis are deposited in this repository </p>
 
