@@ -5,10 +5,10 @@
 - [Summary](#Summary)
 - [Overview](#Overview)
 - [1 Preliminary analyses](#1-Preliminary-analyses)
-	- [1.1 Raw data analyses](#11-Rawdata-analyses)
+	- [1.1 Raw data analyses](#11-Raw-data-analyses)
 	- [1.2 Multivariate analyses](#12-Multivariate-analyses)
 - [2 Phylogenetic comparative analyses](#2-Phylogenetic-comparative-analyses)
-    - [2.1 Phylogenetic generalised linear regression and Phylogenetic ANCOVA](#21-Phylogenetic-generalised-linearregression-and-Phylogenetic-ANCOVA)
+    - [2.1 Phylogenetic generalised linear regression and Phylogenetic ANCOVA](#21-Phylogenetic-generalised-linear-regression-and-Phylogenetic-ANCOVA)
 	- [2.2 Analyses of discrete trait evolution with corHMM](#22-Analyses-of-discrete-trait-evolution-with-corHMM)
 - [Reference](#Reference)
 
