@@ -7,18 +7,9 @@
 - [1 Bayesian estimation of deep-time diversification with PyRate](#1-Bayesian-estimation-of-deep-time-diversification-with-PyRate)
 	- [1.1 Preservation model](#11-Preservation-model)
 	- [1.2 Running PyRate](#12-Running-Pyrate)
-	- [1.3 Assess convergence](#13-Assess-convergence)
-  	- [1.4 Plotting PyRate results](#14-Plotting-PyRate-results)
-- [2 Analyses of the fossil record](#2-Analyses-of-the-fossil-record)
- 	- [2.1 Selecting appropriate PyRate models](#21-Selecting-appropriate-PyRate-models)
-	- [2.2 Extracting time for speciation and extinction](#22-Extracting-time-for-speciation-and-extinction)
-	- [2.3 Estimating lineage through time per habitat](#23-Estimating-lineage-through-time-per-habitat)
-  	- [2.4 Estimating tempo of origination](#24-Estimating-tempo-of-origination)
-	- [2.5 Grafting fossils](#25-Grafting-fossils)
-- [3 Phylogenetic comparative analyses](#3-Phylogenetic-comparative-analyses)
-	- [3.1 Analyses of discrete trait evolution with corHMM](#31-Analyses-of-discrete-trait-evoplution-with-corHMM)
- 	- [3.2 Analyses of continuous trait evolution with OUwie and phylogenetic ANOVA](#32-Analyses-of-continuous-trait-evolution-with-OUwie-and-phylogenetic-ANOVA)
-  	- [3.3 Joint estimation of discrete and continuous trait evolution with hOUwie](#32-Joint-estimation-of-discrete-and-continuous-trait-evolution-with-hOUwie)
+- [2 Phylogenetic comparative analyses](#2-Phylogenetic-comparative-analyses)
+    - [2.1 Phylogenetic generalized linear regression](#21-Phylogeneticgeneralizedlinearregression)
+	- [2.2 Analyses of discrete trait evolution with corHMM](#232-Analyses-of-discrete-trait-evolution-with-corHMM)
 - [Reference](#Reference)
 
 <p align="justify"> This repository's purpose is to give a means of replicability to the article "Caudal vertebral convergence in relation to tail prehensility in Murinae (Rodentia)" but can be generalized to other similar data. All of the presented scripts are written in R language (R Core Team, 2022).
@@ -30,9 +21,7 @@
 
 **1**: 
 
-**2**: Analyses of the fossil record
-
-**3**: Phylogenetic comparative analyses
+**2**: Phylogenetic comparative analyses
 
 <p align="justify"> All data used to perform each analysis are deposited in this repository </p>
 
