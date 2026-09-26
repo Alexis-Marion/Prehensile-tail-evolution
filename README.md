@@ -4,7 +4,7 @@
 
 - [Summary](#Summary)
 - [Overview](#Overview)
-- [1 Multivariate analyses](#1-Multivariateanalyses)
+- [1 Preliminary analyses](#1-Preliminaryanalyses)
 	- [1.1 Raw data analyses](#11-Rawdataanalyses)
 	- [1.2 Multivariate analyses](#12-Multivariateanalyses)
 - [2 Phylogenetic comparative analyses](#2-Phylogenetic-comparative-analyses)
@@ -25,9 +25,9 @@
 
 <p align="justify"> All data used to perform each analysis are deposited in this repository </p>
 
-## 1 Multivariate analyses
+## 1 Preliminary analyses
 
-`used directory (Multivariate_analyses)`
+`used directory (Preliminary analyses)`
 
 <p align="justify">  In this first session, we will be mainly focusing on multivariate analyses of morphological data.</p>
 
