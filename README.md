@@ -8,7 +8,7 @@
 	- [1.1 Raw data analyses](#11-Rawdataanalyses)
 	- [1.2 Multivariate analyses](#12-Multivariateanalyses)
 - [2 Phylogenetic comparative analyses](#2-Phylogenetic-comparative-analyses)
-    - [2.1 Phylogenetic generalised linear regression](#21-Phylogeneticgeneralisedlinearregression)
+    - [2.1 Phylogenetic generalised linear regression and Phylogenetic ANCOVA](#21-PhylogeneticgeneralisedlinearregressionandPhylogeneticANCOVA)
 	- [2.2 Analyses of discrete trait evolution with corHMM](#22-Analyses-of-discrete-trait-evolution-with-corHMM)
 - [Reference](#Reference)
 
