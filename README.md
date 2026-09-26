@@ -1,15 +1,15 @@
- # Caudal vertebral convergence in relation to tail prehensility in Murinae (Rodentia)
+# Caudal vertebral convergence in relation to tail prehensility in Murinae (Rodentia)
 
 ## Summary 
 
 - [Summary](#Summary)
 - [Overview](#Overview)
-- [1 Bayesian estimation of deep-time diversification with PyRate](#1-Bayesian-estimation-of-deep-time-diversification-with-PyRate)
-	- [1.1 P](#11-Preservation-model)
+- [1 Multivariate analyses](#1-Multivariateanalyses)
+	- [1.1 Raw data analyses](#11-Rawdataanalyses)
 	- [1.2 Multivariate analyses](#12-Multivariateanalyses)
 - [2 Phylogenetic comparative analyses](#2-Phylogenetic-comparative-analyses)
     - [2.1 Phylogenetic generalized linear regression](#21-Phylogeneticgeneralizedlinearregression)
-	- [2.2 Analyses of discrete trait evolution with corHMM](#232-Analyses-of-discrete-trait-evolution-with-corHMM)
+	- [2.2 Analyses of discrete trait evolution with corHMM](#22-Analyses-of-discrete-trait-evolution-with-corHMM)
 - [Reference](#Reference)
 
 <p align="justify"> This repository's purpose is to give a means of replicability to the article "Caudal vertebral convergence in relation to tail prehensility in Murinae (Rodentia)" but can be generalized to other similar data. All of the presented scripts are written in R language (R Core Team, 2022).
@@ -19,21 +19,19 @@
 
 <p align="justify"> This repository contains html files for performing the following analyses:
 
-**1**: 
+**1**: Multivariate analyses
 
 **2**: Phylogenetic comparative analyses
 
 <p align="justify"> All data used to perform each analysis are deposited in this repository </p>
 
-## 1 Bayesian estimation of deep-time diversification with PyRate
+## 1 Multivariate analyses
 
-`used directory (PyRate_scripts)`
+`used directory (Multivariate_analyses)`
 
-<p align="justify">  In this first session, we will be using PyRate (Silvestro et al, 2014). PyRate is a program implemented in Python whose aim is to jointly estimate the preservation process, the tempo of origination and extinction of lineages based on their occurrences in the fossil record. Here, we will assume that the PyRate repository with its functions is at the root of the current working directory.</p>
+<p align="justify">  In this first session, we will be mainly focusing on multivariate analyses of morphological data.</p>
 
-### 1.1 Preservation model
-
-`used directory (Preservation_Test)`
+### 1.1 Raw data analysis
 
 `used script (model_preservation_test.sh, model_drafting.r; run_preservation.sh)`
 
@@ -49,13 +47,11 @@
 
 ## 2 Phylogenetic comparative analyses
 
-`used directory (Phylogenetic_comparative_analysis)`
+`used directory (Phylogenetic_comparative_analyses)`
 
 <p align="justify"> In this section, we will perform several phylogenetic comparative analyses. </p>
 
-### 2.1 Analyses of continuous trait evolution with OUwie and phylogenetic ANOVA
-
-`used directories (Panova, OUwie)`
+### 2.1 Phylogenetic generalized linear regression
 
 `used script (Phylogenetic_analysis_of_variance_(PANOVA).r; Phylogenetic_analysis_of_variance_(PANOVA-Replicated).r; PANOVA.sh; OUwie_consensus.r; OUwie_replicated.r; run_OUwie.sh)`
 
@@ -64,11 +60,9 @@
 
 ### 2.2 Analyses of discrete trait evolution with corHMM
 
-`used directory (corHMM)`
+`used script (Ancestral_state_estimation_PT.ipynb, Ancestral_state_estimation_PT_replicated.ipynb)`
 
-`used script (corHMM_ASE_consensus.r; corHMM_ASE_replicated.r; run_corHMM.sh)`
-
-<p align="justify"> The first step in this section is to perform analyses of discrete trait evolution using corHMM. Both versions of this script (consensus vs replicated) designate the consensus tree and the posterior distribution, respectively. Both of these scripts are managed by the "run_corHMM.sh" which essentially runs all these analyses on all trees (extant and fossil+extant) and traits (bioluminescence and habitat).  </p>
+<p align="justify"> The first step in this section is to perform analyses of discrete trait evolution using corHMM. Both versions of this script (consensus vs replicated) designate the consensus tree and the posterior distribution, respectively.  </p>
 
 ### Reference
 
