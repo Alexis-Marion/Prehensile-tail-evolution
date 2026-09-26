@@ -12,8 +12,7 @@
 	- [2.2 Analyses of discrete trait evolution with corHMM](#22-Analyses-of-discrete-trait-evolution-with-corHMM)
 - [Reference](#Reference)
 
-<p align="justify"> This repository's purpose is to give a means of replicability to the article "Caudal vertebral convergence in relation to tail prehensility in Murinae (Rodentia)" but can be generalized to other similar data. All of the presented scripts are written in R language (R Core Team, 2022).
-	If you plan to use any of these scripts, please cite "XXX". </p>
+<p align="justify"> This repository's purpose is to give a means of replicability to the article "Caudal vertebral convergence in relation to tail prehensility in Murinae (Rodentia)" but can be generalized to other similar data. All of the presented scripts are written in R language (R Core Team, 2022). Most of the functions employed here are featured in the geomorph package (Adams& Otárola‐Castillo, 2013), phytools 2.0 (Revell, 2024) and CorHMM (Boyko & Beaulieu, 2021). If you plan to use any of these scripts, please cite "XXX". </p>
 
 ## Overview
 
@@ -33,13 +32,15 @@
 
 ### 1.1 Raw data analyses
 
-`used script (model_preservation_test.sh, model_drafting.r; run_preservation.sh)`
+`used script (Raw_data.ipynb)`
 
-<p align="justify"> One of the main strengths of PyRate is its ability to account for the bias of the fossil record by estimating a preservation process and correcting the estimated age derived from raw occurrence data. Thus, choosing the best-fit preservation model for any PyRate analysis is critical. Fortunately, Silvestro et al. (2019) implemented a likelihood-based approach for preservation model selection. Yet, while this procedure is certainly useful, it is incomplete. Indeed, the first implementation allowed for model selection across HPP, NHPP, TPP and alternative versions of the TPP, with missing bins. However, bin removal occurred only once and was not recursive. Consequently, model selection is incomplete. Here, we corrected and enhanced this procedure by performing model selection on all PyRate replicates (here, 100). Furthermore, we allowed for recursive bin removal, meaning that the best fit TPP model could be a two-bin model, whereas the generating TPP model could be a five-bin model. Model selection is performed with pairwise comparisons of the AICc metrics across all replicates. </p>
+<p align="justify"> The Purpose of this first script is to load and clean raw data obtained through landmarking procedures. In this script, based on the tail length and landmarks, two main metrics will be computed : the Transverse ProcEss Index (TPEI) and the Robusticity Index (RI). Each of these metrics will be computed for all vertebrae, distal vertebrae, transitional vertebrae, proximal vertebrae and the last 25% vertebrae remaining (aka Last Quarter). Species (or lineages) not represented in the phylogenetic tree are removed from the dataset. All metrics are computed for each species and merged with ecological information data in a synthetic dataset.</p>
 
 ### 1.2 Multivariate analyses
 
 `used script (Multivariate analyses & simple phylogenetic regression.ipynb)`
+
+<p align="justify"> The Purpose of this first script is to provide a collection of multivariate analyses and some basic phylogenetic comparative analyses of the data computed in subsection 1.1. In this script, one can perform Principal Component Analysis (PCA), Linear Discriminent Analyses to examine whether certain tail morphologies clustered together relative to their species ecology. Phylogenetic comparative analyses, such as phylogenetic regression aim at examining wether certain morphologies associated with tail prehensility drift from isometry expectation Lastly, convergence indices are computed. </p>
 
 <p align="justify"> </p> 
 
@@ -49,28 +50,23 @@
 
 <p align="justify"> In this section, we will perform several phylogenetic comparative analyses. </p>
 
-### 2.1 Phylogenetic generalized linear regression
+### 2.1 Phylogenetic generalised linear regression and Phylogenetic ANCOVA
 
-`used script (Phylogenetic_analysis_of_variance_(PANOVA).r; Phylogenetic_analysis_of_variance_(PANOVA-Replicated).r; PANOVA.sh; OUwie_consensus.r; OUwie_replicated.r; run_OUwie.sh)`
+`used script (Pgls Pancova.ipynb)`
 
-<p align="justify"> The second step in this section is to perform analyses of continuous trait evolution using both PANOVA and OUwie. The first step consists of running Phylogenetic analyses of variance to compare whether the mean difference between any number of groups significantly differs, even when considering phylogenetic relatedness. Here, to assess wether our results were robust regarding the analytical method employed, we implemented two phylogenetic ANOVA, the first with a null model process generated through simulation (sim-PANOVA; Revell, 2024), and a second with a null model process based on randomizing residuals in a permutation procedure (RRPP; Collyer & Adams, 2018). Both versions of these scripts are managed by the script "PANOVA.sh" which will perform PANOVA on all datasets and all trees (extant and fossil+extant). For OUwie, similarly to corHMM, both versions of this script (consensus vs replicated) designate the consensus tree and the posterior distribution, respectively. Both of these scripts are managed by the "run_OUwie.sh" which essentially runs all these analyses on all trees (extant and fossil+extant) and traits (bioluminescence and habitat).  </p>
-
+<p align="justify"> The purpose of this script is to provide a formal phylogenetic-informed assessment of caudal morphological differences between ecological categories. To do so, generalised regression per ecological categories are estimated, and phylogenetic analyses of covariances (between index value and size) are computed. </p>
 
 ### 2.2 Analyses of discrete trait evolution with corHMM
 
 `used script (Ancestral_state_estimation_PT.ipynb, Ancestral_state_estimation_PT_replicated.ipynb)`
 
-<p align="justify"> The first step in this section is to perform analyses of discrete trait evolution using corHMM. Both versions of this script (consensus vs replicated) designate the consensus tree and the posterior distribution, respectively.  </p>
+<p align="justify"> In this section analyses of discrete trait evolution are performed using corHMM. Both versions of this script (consensus vs replicated) designate the consensus tree and the posterior distribution, respectively. Based on theses results, estimates of ancestral trait are computed, and displayed directly onto the tree of interest. </p>
 
 ### Reference
 
-Brée, B., Condamine, F. L., & Guinot, G. (2022). Combining palaeontological and neontological data shows a delayed diversification burst of carcharhiniform sharks likely mediated by environmental change. Scientific Reports, 12(1), 21906.
+Adams, D. C., & Otárola‐Castillo, E. (2013). geomorph: an R package for the collection and analysis of geometric morphometric shape data. Methods in ecology and evolution, 4(4), 393-399.
 
-Boyko, J. D., O’Meara, B. C., & Beaulieu, J. M. (2023). A novel method for jointly modeling the evolution of discrete and continuous traits. Evolution, 77(3), 836-851.
-
-Collyer, M.L. & Adams, D.C. (2018) RRPP: an R package for fitting linear models to high-dimensional data using residual randomization. Methods in Ecology and Evolution, 9, 1772–1779.
-
-Marion, A. F., Condamine, F. L., & Guinot, G. (2024). Sequential trait evolution did not drive deep-time diversification in sharks. Evolution, 78(8), 1405-1425.
+Boyko, J. D., & Beaulieu, J. M. (2021). Generalized hidden Markov models for phylogenetic comparative datasets. Methods in Ecology and Evolution, 12(3), 468-478.
 
 Revell, L. J. (2024). phytools 2.0: an updated R ecosystem for phylogenetic comparative methods (and other things). PeerJ, 12, e16505.
 
